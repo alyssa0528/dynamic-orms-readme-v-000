@@ -3,7 +3,8 @@ require 'active_support/inflector'
 
 class Song
 
-
+  #self refers to the class (Song). turn it into a string (#to_s), make it all lowercase(#downcase)
+  #and add an -s to the end (#pluralize)
   def self.table_name
     self.to_s.downcase.pluralize
   end
@@ -59,6 +60,3 @@ class Song
   end
 
 end
-
-
-
